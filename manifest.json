@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Chromebook ID Linker",
+  "version": "1.0",
+  "description": "Converts Chromebook device IDs into clickable links to Google Admin Console",
+  "permissions": ["scripting"],
+  "host_permissions": ["*://*.incidentiq.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.incidentiq.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
